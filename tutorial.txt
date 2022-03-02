@@ -1,0 +1,69 @@
+O jogo da forca eh um jogo em que o jogador tem que acertar qual eh a palavra secreta.");
+A cada  letra errada , eh  desenhado  uma  parte  de seis (1/6) do corpo do enforcado.");
+O jogo termina com o acerto da palavra ou quando eh preenchido as 6 partes do corpo do ");
+enforcado.  Ou   seja;   O   jogador   só   poderá  cometer  6   erros   neste   jogo.\n");
+O jogo comeca com a base da forca e riscos que correspondem as letras da palavra secreta.");
+------------
+|          |
+|
+|
+|
+|
+|
+PALAVRA: _ _ _ _ _ _ _
+Por exemplo, se a palavra secreta for MERCADO:
+O jogador deve ir inserindo uma letra por vez e o jogo vai checando se a letra existe na palavra.
+Cada letra que ele acerta eh escrita no espaco correspondente.
+Supondo que o jogador tenha digitado as letras: 'm', 'c' e 'a'. Logo.
+------------
+|          |
+|
+|
+|
+|
+|
+PALAVRA: M _ _ C A _ _
+Caso a letra nao exista nessa palavra, desenha-se uma parte do corpo (iniciando pela cabeca).
+Vamos supor que o jogador tenha inserido a letra 'w' , esta letra nao contem na palavra MERCADO. logo.
+M C A W
+------------
+|          |
+|          0
+|
+|
+|
+|
+PALAVRA: M _ _ C A _ _
+
+As letras inseridas irao aparecer no cabecario da forca.
+
+Se a palavra secreta for completa antes do enforcado o jogador ganha.
+
+                                    M C A W K L V E R  D O
+                                    ------------
+                                    |          |
+                                    |          O
+                                    |         /|\\
+                                    |
+                                    |
+                                    |
+PALAVRA: M E R C A D O
+                          ************** VOCE GANHOU! *****************
+    Se o enforcado for compeleto antes da palavra, o jogador perde.
+
+
+                                    M C A W K L V Z J
+                                    ------------
+                                    |          |
+                                    |          O
+                                    |         /|\\ 
+                                    |         / \\
+                                    |
+                                    |
+PALAVRA: M _ _ C A _ _
+                          ############### VOCE PERDEU! #################
+    FIM DO TUTORIAL
+
+--------------------------------------------------------------------------------------------------------
+
+    printf("\n" );
